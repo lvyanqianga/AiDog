@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Chinese</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery-1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			(function (doc, win) {
+				var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function () {
+					var clientWidth = docEl.clientWidth;
+					if (!clientWidth) return;
+					if(clientWidth>=1300){
+						docEl.style.fontSize = '100px';
+					}else{
+						docEl.style.fontSize = 100 * (clientWidth / 1300) + 'px';
+					}
+				};
+				if (!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</head>
+	<body>
+		<div class="Bigbox">
+			<!--Language-->
+			<div class="Language">
+				<ul>
+					<li><a style="border-bottom: solid 0.03rem white;color: yellow;">中文简体</a></li>
+					<li><a href="html/English/index.html">English</a></li>
+					<li><a href="html/Deutsch/index.html">Deutsch</a></li>
+				</ul>
+			</div>
+			<!--nav-->
+					<div class="nav-top clearfix">
+						
+						<ul class="nav" style="margin-left: 10%;">
+							<li class="drop-down option"><img src="img/logo.png"style="width: 1rem;margin-top: 8%;"/></li>
+						</ul>
+						<ul class="nav" style="margin-left: 10%;">
+         					<li class="drop-down option">人工智能
+            				    <ul class="drop-down-content" style="margin-left: -0.18rem;">
+                 					<li class="option"><a href="html/Chinese/BionicWorkplace.html">Workplace</a></li>
+                 					<li class="option"><a href="html/Chinese/BionicMotionRobot.html">MotionRobot</a></li>
+             					</ul>
+             				</li>
+     					</ul>
+     					<ul class="nav" style="margin-left: 8%;">
+         					<li class="drop-down option">生物模仿
+            				    <ul class="drop-down-content" style="margin-left: -0.2rem;">
+                 					<li class="option"><a href="html/Chinese/BionicWheelBot.html">WheelBot</a></li>
+                 					<li class="option"><a href="html/Chinese/BionicFlyingFox.html">FlyingFox</a></li>
+                 			    	<li class="option"><a href="html/Chinese/BionicFinWave.html">FinWave</a></li>
+             					</ul>
+             				</li>
+     					</ul>
+     					<ul class="nav" style="margin-left: 8%;">
+         					<li class="drop-down option"><a href="html/Chinese/AiDog.html">挖矿狗</a>
+     					</ul>
+     					<ul class="nav" style="margin-left: 8%;">
+							<li class="drop-down option"><a>战略合作</a></li>
+						</ul>
+						
+					</div>
+
+				<!--jpg-->
+				<div class="photo">
+					<img src="img/11.jpg"/>
+					<img src="img/5.jpg"/>
+ 				</div>
+				<div style="width: 80%;margin-left: 10%;margin: 0.1rem 0 0.6rem 10%;">
+					<h1 style="font-size: 0.2rem;">&nbsp;&nbsp;PG Lab，全名Practice Great Laboratory，下文简称PG Lab，寓意实践创造伟大，成立于2015年，总部位于新加坡，创始人为新加坡国立大学Festo Holzapfel，
+						 专注于人工智能、仿生材料研究，PG Lab是一家致力于人工智能、仿生科技的非营利性的公私合作组织。</h1>
+				</div>
+				<!--gif-->
+				<div class="gif">
+					<table border="0" cellspacing="0" cellpadding="0" style="width: 100%;">
+						<tr>
+							<th><img src="img/11.gif"/></th>
+							<th><img src="img/22.gif"/></th>
+							<td><img src="img/10.gif"/></td>
+						</tr>
+						<tr>
+							<td><img src="img/77.gif"/></td>
+							<td><img src="img/55.gif"/></td>
+							<td><img src="img/13.gif"/></td>
+						</tr>
+					</table>
+				</div>
+				
+				
+				<div class="photo">
+					<img src="img/7.jpg"/>
+ 				</div>
+ 				
+ 				<div style="width: 80%;margin-left: 10%;margin: 0.1rem 0 0.6rem 10%;">
+					<h1 style="font-size: 0.2rem;">&nbsp;&nbsp;PG Lab下属研究中心、能力中心、应用实验室3个核心部门，非营利性公私合作伙伴关系使得PG lab独有的模型在国家和国际上被认为
+						是顶级研究领域的企业结构蓝图。PG Lab积极参与众多组织，代表并不断推进新加坡作为尖端研究和技术实现。</h1><br />
+					<h1 style="font-size: 0.2rem;">&nbsp;&nbsp;伴随区块链的发展，PG基于面向应用的基础研究，PG Lab开发了第一个智能产品PizaaGo原型和专利解决方案，作为第一个落地区块链仿生
+						挖矿狗，PG Lab希望给行业带来创新和贡献。为了推进全球化推广，新加坡应用中心将发挥重要作用。</h1>
+				</div>
+ 				
+			
+			
+			<!--footer-->
+			<div class="footer">
+			<h1>联系我们</h1>
+			<h4>我们正在寻找优秀的候选人加入我们的团队</h4>
+			<h4>我们重视激情、多样性和独特的视角</h4>
+		
+			<div class="lianxi">
+				<!--脸书-->
+				<a style="margin-right: 5%;" href="#" title="facebook"><img src="img/facebook.jpg"/></a>
+				<!--推特-->
+				<a href="#"><img src="img/tt.jpg"/></a>
+				<!--邮箱-->
+				<a href="#" style="margin-left: 5%;"><img src="img/eamil.jpg" title="eamil"/></a>
+				<!--电报-->
+				<a style="margin-left: 5%;" href="#"><img src="img/db.jpg" title="telegraph"/></a>
+				<!--微信-->
+				<a style="margin-left: 5%;" class="weixin"><img src="img/weixin.jpg"/></a>
+				<!--QQ-->
+				<a style="margin-left: 5%;" href="#"><img src="img/QQ.jpg"/></a>
+			</div>
+		</div>
+				
+				
+				<img src="img/4-1.jpg" style="width: 100%;"/>
+				
+			</div>
+			
+			<div class="ma">
+				<img src="img/weixin-m.jpg" style="width: 100%;"/>
+				<div style="">X</div>
+			</div>
+			
+			
+			
+			
+ 	</body>
+</html>

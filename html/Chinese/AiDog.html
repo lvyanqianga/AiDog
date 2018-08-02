@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+		<title>AiDog</title>
+		<script type="text/javascript">
+			(function (doc, win) {
+	var docEl = doc.documentElement,
+		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		recalc = function () {
+			var clientWidth = docEl.clientWidth;
+			if (!clientWidth) return;
+			if(clientWidth>=1300){
+				docEl.style.fontSize = '100px';
+			}else{
+				docEl.style.fontSize = 100 * (clientWidth / 1300) + 'px';
+			}
+		};
+ 
+	if (!doc.addEventListener) return;
+	win.addEventListener(resizeEvt, recalc, false);
+	doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+		</script>
+		<script src="../../js/AiDog.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Size.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../../css/AiDog.css"/>
+	</head>
+	<body>
+		
+<div id="con">
+		<!--Tab-->
+  <ul id="tags">
+    <li class="selectTag"><a onClick="selectTag('tagContent0',this)" href="javascript:void(0)">产品概览</a></li>
+    <li><a onClick="selectTag('tagContent1',this)" href="javascript:void(0)">详细功能</a></li>
+    <li><a onClick="selectTag('tagContent2',this)" href="javascript:void(0)">设计细节</a></li>
+    <li><a onClick="selectTag('tagContent3',this)" href="javascript:void(0)">产品参数</a></li>
+  </ul>
+  
+  <!--photoshop-->
+  <div id="tagContent">
+    <div class="tagContent selectTag" id="tagContent0">
+    	<img src="../../img/img/1.jpg"/>
+    	<img src="../../img/img/2.jpg"/>
+    	<img src="../../img/img/3.jpg"/>
+    	<img src="../../img/img/4.jpg"/>
+    </div>
+    <div class="tagContent" id="tagContent1">
+		<img src="../../img/img/6.png"/>
+		<img src="../../img/img/7.jpg"/>
+		<img src="../../img/img/8.jpg"/>
+		<img src="../../img/img/9.jpg"/>
+		<img src="../../img/img/10.jpg"/>
+		<img src="../../img/img/11.png"/>
+		<img src="../../img/img/12.jpg"/>
+		<img src="../../img/img/13.jpg"/>
+		<img src="../../img/img/14.jpg"/>
+		<img src="../../img/img/15.jpg"/>
+    </div>
+    <div class="tagContent" id="tagContent2">
+    	<img src="../../img/img/16.jpg"/>
+    </div>
+    <div class="tagContent" id="tagContent3">
+    	<img src="../../img/img/17.png"/>
+    </div>
+  </div>
+  
+</div>
+		
+		
+		
+		
+	</body>
+</html>

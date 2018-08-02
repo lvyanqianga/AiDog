@@ -1,0 +1,191 @@
+	*{
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		text-decoration: none;
+		box-sizing: border-box;
+		font-size: 10px;
+	}
+	h1{
+		font-family: "宋体";
+	}
+	/*清除浮动*/
+	.clearfix:after{
+		display: block;
+		clear: both;
+		content: '';
+	}
+	.Bigbox{
+		width: 100%;
+		overflow: hidden;
+			}
+			
+	/*语言切换*/
+	.Language{
+		width: 80%;
+		height: 0.5rem;
+		margin-left: 10%;
+		background-color: #CCCCCC;
+		font-family: "宋体";
+	}
+	.Language ul{
+		display: flex;
+		justify-content: space-around;
+	}
+	.Language ul li a{
+		font-size: 0.3rem;
+		line-height: 0.5rem;
+		color: black;
+	}
+	.Language a:hover{
+		cursor:pointer;
+		border-bottom: solid 0.03rem white;
+		color: yellow;
+	}
+	/*导航*/
+	.nav-top{
+		width: 100%;
+		/*margin-left: 10%;*/
+		height: 0.7rem;
+		background-color: black;
+		overflow: hidden;
+	}
+	.nav{
+		float: left;
+	}
+     .drop-down .drop-down-content a{
+     	font-size: 0.1rem;
+     }
+     /*导航条内显示的li设置*/
+     .drop-down{
+     	line-height: 0.7rem;
+     	color: white;
+     	font-size: 0.2rem;
+     	cursor:pointer;
+     	height: 0.7rem;
+     }
+     /*导航条内显示的a标签设置*/
+     .drop-down a{
+     	color: white;
+     	font-size: 0.2rem;
+     }
+     
+     .nav .drop-down:hover{
+     	color: yellow;
+     }
+      .nav .drop-down>a:hover{
+     	color: yellow;
+     }
+     /*鼠标悬停显示下拉菜单*/
+     .nav .drop-down:hover .drop-down-content{
+        display: block;
+     }
+     /*鼠标悬停到下拉菜单内单个选项*/
+     .drop-down-content li:hover a{
+     	font-size: 0.1rem;
+        background-color:rgb(246,241,87);
+        color: black;
+     }
+     /*设置全部下拉菜单*/
+     .drop-down-content{
+        display: none;
+        z-index: 1;
+        position: absolute;
+        text-align: center;
+     }
+     /*下拉菜单中的a*/
+     .nav li ul a{
+        display: block;
+        text-decoration: none;
+        width:1.2rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        text-align: center;
+        color: black;
+        background-color: white;
+        font-size: 0.2rem;
+        border-radius: 0.05rem;
+        border: solid 1px black;
+        border-top: none;
+     }
+	
+
+
+/*静态图*/
+.photo{
+	width: 80%;
+	margin: 1px 0 0 10%;
+}
+.photo img{
+	width: 100%;
+}
+/*动图*/
+.gif{
+	width: 80%;
+	margin-left: 10%;
+	text-align: center;
+}
+.gif img{
+	border: none;
+	width: 100%;
+}
+
+
+
+/*尾部*/
+.footer{
+	width: 100%;
+	height: 2rem;
+	background-color: rgb(3,3,5);
+	text-align: center;
+	padding-top:0.3rem ;
+	position: relative;
+	bottom: -0.3px;
+}
+.footer h1{
+	color: white;
+	font-size: 0.2rem;
+}
+.footer h4{
+	color: white;
+	font-size: 0.1rem;
+	margin-top: 0.1rem;
+}
+.eamil{
+	color: white;
+	margin-top: 0.1rem;
+	font-size: 0.1rem;
+}
+.footer .lianxi{
+	margin-top: 0.4rem;
+}
+.footer .lianxi img{
+	width: 0.4rem;
+	height: 0.4rem;
+	border-radius: 50%;
+}
+
+.ma{
+	position: fixed;
+	bottom: 35%;
+	left:35%;
+	display: none;
+	width: 25%;
+	padding: 0.3rem;
+	z-index: 10;
+	background-color: #CCCCCC;
+}
+.ma div{
+	width: 0.2rem;
+	height: 0.2rem;
+	line-height: 0.2rem;
+	text-align: center;
+	border-radius: 0.09rem;
+	cursor:pointer;
+	position: absolute;
+	right: 0.1rem;top: 0.07rem;
+	background-color: white;
+}
+.ma div:hover{
+	background-color: yellow;
+}
